@@ -13,29 +13,19 @@ import Review.Rule as Rule exposing (Rule)
 import Set exposing (Set)
 
 
-{-| Reports... REPLACEME
+{-| Finds the modules which are not directly imported by a test module.
 
     config =
         [ FindUntestedModules.rule
         ]
 
+This is a very crude way of attempting to find untested modules. [Code coverage tools](https://github.com/zwilias/elm-coverage)
+do a better job at this than this rule could, but there may some blind spots that this rule can cover.
 
-## Fail
+For instance, you might have some complex function being run as part of your tests without explicitly testing the function itself,
+meaning that a code coverage tool would indicate the function as being tested, whereas in practice it may not be tested properly.
 
-    a =
-        "REPLACEME example to replace"
-
-
-## Success
-
-    a =
-        "REPLACEME example to replace"
-
-
-## When (not) to enable this rule
-
-This rule is useful when REPLACEME.
-This rule is not useful when REPLACEME.
+Both systems have blind spots, and maybe this kind of insight can help you detect which modules deserve more extensive testing.
 
 
 ## Try it out
@@ -43,7 +33,7 @@ This rule is not useful when REPLACEME.
 You can try this rule out by running the following command:
 
 ```bash
-elm-review --template SiriusStarr/elm-review-import-graph/example --rules FindUntestedModules
+elm-review --template jfmengels/elm-review-random-insights/preview --report=json --extract | jq -r '.extracts.FindUntestedModules'
 ```
 
 -}
