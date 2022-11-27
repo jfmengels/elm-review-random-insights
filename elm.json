@@ -1,7 +1,7 @@
 {
     "type": "package",
     "name": "jfmengels/elm-review-random-insights",
-    "summary": "",
+    "summary": "Random elm-review rules to gain insight into your Elm codebase",
     "license": "BSD-3-Clause",
     "version": "1.0.0",
     "exposed-modules": [
