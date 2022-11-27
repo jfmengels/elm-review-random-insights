@@ -9,7 +9,7 @@ and potentially be used as starting points for more practical rules.
 
 ## Provided rules
 
-- [`FindUntestedModules`](https://package.elm-lang.org/packages/jfmengels/elm-review-random-insights/1.0.0/FindUntestedModules) - Finds the modules which are not directly imported by a test module.
+- [`FindUntestedModules`](https://elm-doc-preview.netlify.app/FindUntestedModules?repo=jfmengels%2Felm-review-random-insights&version=main) - Finds the modules which are not directly imported by a test module.
 
 
 ## Configuration
