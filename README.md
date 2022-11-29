@@ -10,6 +10,7 @@ and potentially be used as starting points for more practical rules.
 ## Provided rules
 
 - [`FindUntestedModules`](https://elm-doc-preview.netlify.app/FindUntestedModules?repo=jfmengels%2Felm-review-random-insights&version=main) - Finds the modules which are not directly imported by a test module.
+- [`ModuleNameToFilePath`](https://elm-doc-preview.netlify.app/ModuleNameToFilePath?repo=jfmengels%2Felm-review-random-insights&version=main) - Get a mapping of module name to file path.
 
 
 ## Configuration
@@ -18,11 +19,13 @@ and potentially be used as starting points for more practical rules.
 module ReviewConfig exposing (config)
 
 import FindUntestedModules
+import ModuleNameToFilePath
 import Review.Rule exposing (Rule)
 
 config : List Rule
 config =
     [ FindUntestedModules.rule
+    , ModuleNameToFilePath.rule
     ]
 ```
 
