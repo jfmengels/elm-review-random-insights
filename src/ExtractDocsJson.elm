@@ -26,6 +26,50 @@ import Review.Rule as Rule exposing (Rule)
 
 Maybe this is an interesting start for generating documentation for your project.
 
+The target is to have something like [this](https://package.elm-lang.org/packages/jfmengels/elm-review/latest/docs.json)
+that can be decoded using [`Elm.Docs.decoder`](https://package.elm-lang.org/packages/elm/project-metadata-utils/latest/Elm-Docs#decoder).
+
+
+## Example output
+
+```json
+[
+  {
+    "name": "Api.Endpoint",
+    "comment": "MISSING",
+    "unions": [
+      {
+        "name": "Endpoint",
+        "comment": "{-| Get a URL to the Conduit API.\n\nThis is not publicly exposed, because we want to make sure the only way to get one of these URLs is from this module.\n\n-}",
+        "args": [],
+        "cases": [
+          [
+            "Endpoint",
+            [
+              "String"
+            ]
+          ]
+        ]
+      }
+    ],
+    "aliases": [],
+    "values": [
+      {
+        "name": "tags",
+        "comment": "{-| The endpoint to get tags\n-}",
+        "type": "Endpoint"
+      },
+      {
+        "name": "feed",
+        "comment": "MISSING",
+        "type": "List QueryParameter -> Endpoint"
+      }
+    ],
+    "binops": []
+  }
+]
+```
+
 
 ## Try it out
 

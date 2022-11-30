@@ -28,6 +28,16 @@ meaning that a code coverage tool would indicate the function as being tested, w
 Both systems have blind spots, and maybe this kind of insight can help you detect which modules deserve more extensive testing.
 
 
+## Example output
+
+```json
+[
+  "Some.Untested.Module",
+  "Another.Module.Which.Could.Use.Testing"
+]
+```
+
+
 ## Try it out
 
 You can try this rule out by running the following command:

@@ -20,6 +20,21 @@ import Review.Rule as Rule exposing (Rule)
 Maybe this is useful for some kind of build task?
 
 
+## Example output
+
+```json
+{
+  "Api": "src/Api.elm",
+  "Article": "src/Article.elm",
+  "Article.Body": "src/Article/Body.elm",
+  "Asset": "src/Asset.elm",
+  "Page.Article": "src/Page/Article.elm",
+  "Page.Article.Editor": "src/Page/Article/Editor.elm",
+  "Page.Profile": "src/Page/Profile.elm"
+}
+```
+
+
 ## Try it out
 
 You can try this rule out by running the following command:
