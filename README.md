@@ -9,9 +9,9 @@ and potentially be used as starting points for more practical rules.
 
 ## Provided rules
 
-- [`ExtractDocsJson`](https://elm-doc-preview.netlify.app/ExtractDocsJson?repo=jfmengels%2Felm-review-random-insights&version=main) - Recreate `docs.json` for your project.
-- [`FindUntestedModules`](https://elm-doc-preview.netlify.app/FindUntestedModules?repo=jfmengels%2Felm-review-random-insights&version=main) - Finds the modules which are not directly imported by a test module.
-- [`ModuleNameToFilePath`](https://elm-doc-preview.netlify.app/ModuleNameToFilePath?repo=jfmengels%2Felm-review-random-insights&version=main) - Get a mapping of module name to file path.
+- [🔍 `ExtractDocsJson`](https://elm-doc-preview.netlify.app/ExtractDocsJson?repo=jfmengels%2Felm-review-random-insights&version=main "Provides insight") - Recreate `docs.json` for your project.
+- [🔍 `FindUntestedModules`](https://elm-doc-preview.netlify.app/FindUntestedModules?repo=jfmengels%2Felm-review-random-insights&version=main "Provides insight") - Finds the modules which are not directly imported by a test module.
+- [🔍 `ModuleNameToFilePath`](https://elm-doc-preview.netlify.app/ModuleNameToFilePath?repo=jfmengels%2Felm-review-random-insights&version=main "Provides insight") - Get a mapping of module name to file path.
 
 
 ## Configuration
